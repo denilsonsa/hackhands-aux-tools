@@ -47,6 +47,8 @@ table.sheet {
 table.sheet p {
 	margin: 0;
 	padding: 0;
+	margin-left: 0.75em;
+	text-indent: -0.75em;
 }
 table.sheet p + p {
 	margin-top: 0.25em;
@@ -101,7 +103,8 @@ table.sheet td.type-yesno {
 table.sheet .cg-name-end,
 table.sheet .cg-desktop-end,
 table.sheet .cg-mobile-end,
-table.sheet .cg-features-end {
+table.sheet .cg-features-end,
+table.sheet .cg-install-end {
 	border-right-width: 2px;
 }
 

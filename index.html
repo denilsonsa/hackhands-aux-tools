@@ -31,11 +31,10 @@ layout: base
     <col class="type-yesno col-voice-chat">
     <col class="type-yesno col-video-chat">
   </colgroup>
-  <!--colgroup class="cg-install">
-    <col class="col-">
-    Requires installing a system-wide package (admin privileges)?
-    Requires any kind of account or registration?
-  </colgroup-->
+  <colgroup class="cg-install">
+    <col class="col-account">
+    <col class="col-install">
+  </colgroup>
   <colgroup class="cg-extra">
     <col class="col-comments">
   </colgroup>
@@ -54,6 +53,9 @@ layout: base
       <th>Text chat</th>
       <th>Voice chat</th>
       <th>Video chat</th>
+
+      <th>Account registration</th>
+      <th>Installation and requirements</th>
 
       <th>Comments</th>
     </tr>
@@ -74,12 +76,14 @@ layout: base
       <td class="yes">Yes</td>
       <td class="yes">Yes</td>
 
-      <!--
-        Uses HTML5 RTC, supports Google Chrome, Mozilla Firefox and Opera.
-        Screen sharing requires Chrome extension. https://chrome.google.com/webstore/detail/appearin-screen-sharing/bodncoafpihbhpfljcaofnebjkaiaiga
-      -->
+      <td class="yes">Optional</td>
       <td>
-        <p></p>
+        <p>Uses HTML5 WebRTC; text+voice+video work on Chrome, Firefox and Opera.</p>
+        <p>Viewing a shared screen is only supported in Chrome and Opera (but not on Firefox).</p>
+        <p>Sharing a screen requires a <a href="https://chrome.google.com/webstore/detail/appearin-screen-sharing/bodncoafpihbhpfljcaofnebjkaiaiga">Chrome extension</a>.</p>
+      </td>
+
+      <td>
       </td>
     </tr>
 
@@ -87,7 +91,7 @@ layout: base
       <td><a href="https://www.webex.com/">Cisco WebEx</a></td>
 
       <td class="partial" title="Requires ActiveX or Java plugin">Difficult</td>
-      <td class="yes" title="Requires plugin">Yes</td>
+      <td class="partial" title="Requires plugin">Difficult</td>
       <td class="partial" title="Requires Java plugin">Difficult</td>
       <td class="no">No</td>
       <td class="no">No</td>
@@ -98,11 +102,16 @@ layout: base
       <td>?</td>
       <td>?</td>
 
-      <!--
-        Does it require installing anything?
-      -->
+      <td class="no">
+        <p>Required</p>
+        <p>Registered users can invite other users.</p>
+      </td>
       <td>
-        <p><a href="https://www.cisco.com/c/en/us/td/docs/collaboration/meeting_center/wbs2911/Meeting-Center-Release-Notes/Meeting-Center-Release-Notes_chapter_010.html">Requires Active X or Java or a plugin</a>, supports a very limited subset of browsers/systems.</p>
+        <p><a href="https://www.cisco.com/c/en/us/td/docs/collaboration/meeting_center/wbs2911/Meeting-Center-Release-Notes/Meeting-Center-Release-Notes_chapter_010.html">Requires Active X or Java plugin</a>.</p>
+        <p><a href="https://www.cisco.com/c/en/us/td/docs/collaboration/meeting_center/wbs2911/Meeting-Center-Release-Notes/Meeting-Center-Release-Notes_chapter_010.html">On Mac, requires installing a plugin</a>.</p>
+      </td>
+
+      <td>
         <p><a href="https://hackhands.com/denilsonsa/">Denilson Sá</a> says: <q>Does not work on Ubuntu 15.04 with icedtea. Don't waste your time with this tool.</q></p>
       </td>
     </tr>
@@ -122,9 +131,13 @@ layout: base
       <td class="yes">Yes</td>
       <td class="yes">Yes</td>
 
-      <!--
-        Does it require installing anything?
-      -->
+      <td class="no"><p>Requires a Google account</p></td>
+      <td>
+        <p>Uses HTML5.</p>
+        <p><a href="https://support.google.com/hangouts/answer/1216376?hl=en">Some browsers/systems may need the Hangouts plugin.</a></p>
+        <p>Does screen sharing require a plugin or an extension?</p>
+      </td>
+
       <td>
         <p></p>
       </td>
@@ -145,10 +158,11 @@ layout: base
       <td class="no">No</td>
       <td class="no">No</td>
 
-      <!--
-        Requires manually installing a package to the system.
-        https://support.google.com/chrome/answer/1649523?hl=en
-      -->
+      <td class="no"><p>Requires a Google account</p></td>
+      <td>
+        <p><a href="https://support.google.com/chrome/answer/1649523?hl=en">Requires installing software to the system.</a></p>
+      </td>
+
       <td>
         <p></p>
       </td>
@@ -169,11 +183,15 @@ layout: base
       <td class="yes">Yes</td>
       <td>?</td>
 
-      <!--
-        Requires manually installing a package to the system.
-      -->
       <td>
         <p><a href="http://blog.screenhero.com/post/109337923751/screenhero-joins-slack">Currently closed for new accounts</a>, existing users can invite new users.</p>
+      </td>
+      <td>
+        <p><a href="https://screenhero.com/download.html">Requires installing software to the system.</a></p>
+      </td>
+
+      <td>
+        <p></p>
       </td>
     </tr>
 
@@ -192,11 +210,17 @@ layout: base
       <td class="yes">Yes</td>
       <td class="yes">Yes</td>
 
-      <!--
-        Requires manually installing a package to the system.
-      -->
+      <td class="no">
+        <p>Requires a Skype account or a Microsoft account.</p>
+        <p>Allows sign-in through Facebook.</p>
+      </td>
       <td>
+        <p><a href="https://www.skype.com/en/download-skype/skype-for-computer/">Requires installing software to the system.</a></p>
         <p><a href="https://web.skype.com/">Skype for Web</a> requires a <a href="https://support.skype.com/en/faq/FA12316/what-is-the-skype-web-plugin-and-how-do-i-install-it">plugin</a> on <a href="http://blogs.skype.com/2016/04/15/new-seamless-skype-video-calling-on-microsoft-edge-preview/">all browsers except Microsoft Edge</a>.</p>
+      </td>
+
+      <td>
+        <p></p>
       </td>
     </tr>
 
@@ -215,12 +239,14 @@ layout: base
       <td class="no">No</td>
       <td class="no">No</td>
 
-      <!--
-        Requires manually installing a package to the system.
-        Can be executed without installing (i.e. portable version).
-      -->
+      <td class="yes">Optional</td>
       <td>
+        <p><a href="https://www.teamviewer.com/en/download/">Requires downloading software, but installation is optional (a <em>portable</em> version is also available).</a></p>
         <p>The <a href="https://chrome.google.com/webstore/detail/teamviewer/oooiobdokpcfdlahlmcddobejikcmkfo">Chrome app</a> is unidirectional: it can connect to shared screens, but it cannot share the screen.</p>
+      </td>
+
+      <td>
+        <p></p>
       </td>
     </tr>
 
@@ -239,7 +265,16 @@ layout: base
       <td class="yes">Yes</td>
       <td class="no">No</td>
 
-      <!-- Requires manually installing a package to the system. -->
+      <td class="partial">
+        <p>Required for hosting a meeting.</p>
+        <p>Optional for joining a meeting.</p>
+        <p>Meetings started from within a <a href="https://hackhands.com/">HackHands</a> session don't need an account.</p>
+      </td>
+      <td>
+        <p><a href="https://zoom.us/download">Requires installing software to the system.</a></p>
+        <p></p>
+      </td>
+
       <td>
         <p>Integrated with <a href="https://hackhands.com/">HackHands</a>.</p>
       </td>
@@ -262,6 +297,7 @@ layout: base
 Other ideas:
 
 * Comparison of regex tools (useful when debugging or explaining regular expressions).
+* Online text writing tools (such as http://etherpad.osuosl.org/ ).
 
 -->
 
