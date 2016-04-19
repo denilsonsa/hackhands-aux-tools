@@ -1,5 +1,5 @@
 ---
-# vim:et:sw=2:ts=2:foldmethod=marker:foldmarker=<tr></tr>
+# vim:et:sw=2:ts=2:foldmethod=marker:foldmarker=<tr>,</tr>
 layout: base
 ---
 
@@ -325,6 +325,7 @@ layout: base
     <col class="type-yesno col-brush-size">
   </colgroup>
   <colgroup class="cg-features">
+    <col class="type-yesno col-zoom">
     <col class="type-yesno col-pointing">
     <col class="type-yesno col-text">
     <col class="type-yesno col-upload">
@@ -359,6 +360,7 @@ layout: base
       <th title="Lines (curved or straight) that are connected to shapes, so when the shape is moved, the lines are also updated.">Connections</th>
       <th>Brush sizes</th>
 
+      <th>Pan and zoom</th>
       <th title="Features that either highlights changes or shows the current pointed location.">Pointing</th>
       <th>Text</th>
       <th>Image/file upload</th>
@@ -384,6 +386,47 @@ layout: base
   </thead>
   <tbody>
     <tr>
+      <td><a href="https://limnu.com/">Limnu</a></td>
+
+      <td class="yes">Real-time</td>
+      <td class="no">No</td>
+      <td class="no">No</td>
+      <td class="yes" title="Anything can be moved and resized.">Yes</td>
+      <td class="no">No</td>
+      <td class="partial" title="The brush has an effect simulating real-world markers">3</td>
+
+      <td class="yes">Yes</td>
+      <td class="yes" title="Cursor location and selected objects are broadcasted to all users.">Yes</td>
+      <td class="partial" title="Floating text, sticky notes. Neither font nor color can be modified.">Basic</td>
+      <td class="yes">Images</td>
+      <td class="yes">Per-user</td>
+
+      <td class="yes">12 colors</td>
+      <td class="no">No</td>
+      <td class="no">No</td>
+      <td class="yes">12</td>
+
+      <td class="yes">As PNG</td>
+
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="partial"><a href="https://appear.in/">appear.in</a></td>
+      <td class="partial"><a href="https://appear.in/">appear.in</a></td>
+
+      <td class="yes">
+        <p>Optional.</p>
+        <p>Allows sign-in through Google or Facebook.</p>
+      </td>
+      <td>
+        <p>Works on desktop and mobile browsers.</p>
+      </td>
+
+      <td>
+        <p>Great general-purpose whiteboard.</p>
+      </td>
+    </tr>
+
+    <tr>
       <td><a href="https://www.twiddla.com/">Twiddla</a></td>
 
       <td class="yes">Yes</td>
@@ -393,9 +436,10 @@ layout: base
       <td class="no">No</td>
       <td class="yes" title="1, 3, 6, 12, 20px">5</td>
 
+      <td class="no">No</td>
       <td class="partial" title="The username is shown whenever a drawing is made or is moved.">Only changes</td>
       <td class="yes" title="Floating text, text inside sticky note, speech bubble or rounded box, floating Math formulas using LaTeX.">Yes + LaTeX</td>
-      <td class="yes">Images and documents</td>
+      <td class="yes">Images, documents, web pages</td>
       <td class="yes">Per-user</td>
 
       <td class="no">No</td>
@@ -403,11 +447,11 @@ layout: base
       <td class="no">No</td>
       <td class="partial" title="It allows picking 2 custom colors and quickly switching between them.">2</td>
 
-      <td class="partial"><a href="https://www.twiddla.com/Pricing.aspx">Subscription</a></td>
+      <td class="partial"><a href="https://www.twiddla.com/Pricing.aspx">Pro</a></td>
 
       <td class="yes">Yes</td>
       <td class="yes">Yes</td>
-      <td class="partial" title="Voice chat requires a Pro account.">Paid</td>
+      <td class="partial"><a href="https://www.twiddla.com/Pricing.aspx">Pro</a></td>
       <td class="no">No</td>
 
       <td class="yes">
@@ -433,6 +477,7 @@ layout: base
       <td class="yes" title="Curved or straight, with optional arrows, in solid or dashed styles.">Yes</td>
       <td class="yes" title="1, 2, 3, 6, 12, 24px">6</td>
 
+      <td class="yes" title="Zooming is limited to &quot;Map View&quot;.">Yes</td>
       <td class="yes" title="The cursor location is shown to other users at all times (with name, color and avatar).">Shows cursor</td>
       <td class="yes" title="Floating text, text inside any shape, several shapes support Markdown formatting.">Yes + Markdown</td>
       <td class="partial"><a href="https://sketchboard.io/tos.html">Subscription</a></td>
@@ -452,6 +497,8 @@ layout: base
 
       <td class="yes">
         <p>Optional.</p>
+        <p>Boards started by guest users can be edited by guests.</p>
+        <p>Boards started by logged-in users cannot be edited by guests.</p>
       </td>
       <td>
         <p>Works on desktop and mobile browsers.</p>
@@ -459,6 +506,46 @@ layout: base
 
       <td>
         <p>Great for drawing diagrams.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td><a href="https://whiteboardfox.com/">Whiteboard Fox</a></td>
+
+      <td class="yes">Yes</td>
+      <td class="no">No</td>
+      <td class="no">No</td>
+      <td class="partial" title="Only text and pictures can be moved.">Text, images</td>
+      <td class="no">No</td>
+      <td class="no">1</td>
+
+      <td class="yes">Yes</td>
+      <td class="no">No</td>
+      <td class="partial" title="Only the color can be changed.">Basic</td>
+      <td class="yes">Images</td>
+      <td class="yes">Per-user</td>
+
+      <td class="yes" title="Black, blue, aqua, red, green, purple, yellow">7 colors</td>
+      <td class="no">No</td>
+      <td class="no">No</td>
+      <td class="no">No</td>
+
+      <td class="yes">As PNG</td>
+
+      <td class="no">No</td>
+      <td class="no">No</td>
+      <td class="no">No</td>
+      <td class="no">No</td>
+
+      <td class="yes">
+        <p>Optional Facebook sign-in.</p>
+      </td>
+      <td>
+        <p>Works on desktop and mobile browsers.</p>
+      </td>
+
+      <td>
+        <p>Very basic.</p>
       </td>
     </tr>
 
@@ -473,6 +560,7 @@ layout: base
       <td class="partial" title="Only thick sizes are available: 8, 16, 23, 31, 38px">5</td>
 
       <td class="no">No</td>
+      <td class="no">No</td>
       <td class="partial" title="Text size is based on the brush size.">Basic</td>
       <td class="yes">Images</td>
       <td class="no" title="Undo seems to work fine on Chrome, but undoing on Firefox fails to broadcast the changes.">Per-user, buggy</td>
@@ -485,7 +573,7 @@ layout: base
       <td class="yes">As PNG</td>
 
       <td class="yes" title="The name can be changed at the &quot;Show users&quot; dialog.">Yes</td>
-      <td class="partial" title="Hidden by default, no notification is shown for incoming messages.">Hidden</td>
+      <td class="yes">Yes</td>
       <td class="no">No</td>
       <td class="no">No</td>
 
@@ -511,6 +599,7 @@ layout: base
       <td class="no">No</td>
       <td class="partial" title="1, 4px">2</td>
 
+      <td class="no" title="Fixed-size canvas of 1600×1200.">No</td>
       <td class="no">No</td>
       <td class="partial" title="Floating text or text inside a sticky note. Changing the style is not possible.">Basic</td>
       <td class="no">No</td>
@@ -544,13 +633,14 @@ layout: base
     <tr>
       <td><a href="http://drawpile.net/">Drawpile</a></td>
 
-      <td class="yes">Yes</td>
+      <td class="yes">Real-time</td>
       <td class="yes" title="Optionally snaps at 45° angles when holding shift.">Yes</td>
       <td class="partial" title="Only lines, rectangles and ellipses.">Basic</td>
       <td class="no">No</td>
       <td class="no">No</td>
       <td class="yes" title="Any size from 1 to 128px">128</td>
 
+      <td class="yes" title="Pan, zoom and rotate.">Yes</td>
       <td class="yes" title="Shows the location while clicking, and also shows a trail for a couple of seconds.">Laser pointer tool</td>
       <td class="yes">Yes</td>
       <td class="yes">Images</td>
@@ -579,6 +669,297 @@ layout: base
         <p>Powerful painting tool.</p>
       </td>
     </tr>
+
+    <tr>
+      <td><a href="https://realtimeboard.com/">RealtimeBoard</a></td>
+
+      <td class="yes">Yes</td>
+      <td class="yes" title="No angle snapping.">Yes</td>
+      <td class="yes" title="Rectangle, ellipse, triangle, diamond, rhombus, star, speech bubble, arrows. Several wireframes are also available.">Yes</td>
+      <td class="yes" title="Anything can be moved, resized and modified.">Yes</td>
+      <td class="yes" title="Curved or straight, with optional arrows, in solid or dashed styles.">Yes</td>
+      <td class="yes" title="Any size from 2 to 30px">29</td>
+
+      <td class="yes">Yes</td>
+      <td class="yes" title="Username and avatar is shown whenever a change is made. In addition, there is an option to shows collaborators cursors.">Toggle</td>
+      <td class="yes" title="Floating text, sticky notes, text inside any shape.">Yes</td>
+      <td class="yes">
+        <p>Images, icons, image search, web pages, Vimeo, YouTube</p>
+      </td>
+      <td class="yes">Per-user</td>
+
+      <td class="yes">16 colors</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="yes" title="New colors are added to the palette.">Yes</td>
+
+      <td class="yes">As JPG or PDF</td>
+
+      <td>-</td>
+      <td class="yes">Yes</td>
+      <td class="partial"><a href="https://realtimeboard.com/pricing/">Team</a></td>
+      <td class="partial"><a href="https://realtimeboard.com/pricing/">Team</a></td>
+
+      <td class="no">
+        <p>Required</p>
+        <p>Allows sign-in through Google or Facebook.</p>
+      </td>
+      <td>
+        <p>Works on desktop browsers.</p>
+      </td>
+
+      <td>
+        <p>Guests have read-only access.</p>
+        <p>Collaborators require a <a href="https://realtimeboard.com/pricing/">Team subscription</a>.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td><a href="https://ziteboard.com/">Ziteboard</a></td>
+
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="partial" title="Lines, rectangles, circles">Basic</td>
+      <td class="yes" title="Shift-click to select objects.">Yes</td>
+      <td class="no">No</td>
+      <td class="partial" title="Brush size varies with zoom.">3</td>
+
+      <td class="yes">Yes</td>
+      <td class="no">No</td>
+      <td class="partial" title="3 text sizes.">Basic</td>
+      <td class="yes">Images</td>
+      <td class="partial" title="Undoes drawings and images, but does not support undoing movements.">Limited</td>
+
+      <td class="partial" title="Black, blue, red">
+        <p><a href="https://ziteboard.com/pricing/">3 colors on the free plan</a></p>
+      </td>
+      <td class="no">No</td>
+      <td class="no">No</td>
+      <td class="no">No</td>
+
+      <td class="yes" title="Requires login.">As PNG or SVG</td>
+
+      <td class="no">No</td>
+      <td class="no">No</td>
+      <td class="no">No</td>
+      <td class="no">No</td>
+
+      <td class="no">
+        <p>Required for collaboration.</p>
+        <p>Allows sign-in through Facebook, Twitter, Google.</p>
+      </td>
+      <td>
+        <p>Works on desktop and mobile browsers.</p>
+      </td>
+
+      <td>
+        <p><a href="https://hackhands.com/denilsonsa/">Denilson Sá</a> says: <q>I could not make the team collaboration work, probably because it requires login from different accounts.</q></p>
+      </td>
+    </tr>
+
+    <tr>
+      <td><a href="https://www.groupboard.com/products/">Groupboard</a></td>
+
+      <td class="yes">Yes</td>
+      <td class="yes" title="No angle snapping.">Yes</td>
+      <td class="partial" title="Only lines, rectangles and ellipses.">Basic</td>
+      <td class="no">No</td>
+      <td class="no">No</td>
+      <td class="yes" title="Any size from 1 to 10px">10</td>
+
+      <td class="partial">
+        <p><a href="https://www.groupboard.com/products/comparison.shtml">Groupboard Designer</a></p>
+      </td>
+      <td class="partial" title="The username is shown whenever a drawing is made.">Only changes</td>
+      <td class="partial" title="Text size is based on the brush size.">Basic</td>
+      <td class="yes">
+        <p>Images</p>
+        <p><a href="https://www.groupboard.com/support/user.shtml">Documents in Groupboard Designer</a></p>
+      </td>
+      <td class="partial">
+        <p><a href="https://www.groupboard.com/products/comparison.shtml">Groupboard Designer</a></p>
+      </td>
+
+      <td class="yes">11 colors</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="no">No</td>
+
+      <td class="yes">As PNG</td>
+
+      <td class="yes" title="The name can be changed after clicking the &quot;gears&quot; icon at the chat dialog.">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="partial"><a href="https://www.groupboard.com/products/comparison.shtml">Groupworld</a></td>
+      <td class="partial"><a href="https://www.groupboard.com/products/comparison.shtml">Groupworld</a></td>
+
+      <td class="no">
+        <p><a href="https://www.groupboard.com/demo/gbregister.shtml">Required</a></p>
+      </td>
+      <td>
+        <p>Works on desktop and mobile browsers.</p>
+        <p>Mobile apps are also available.</p>
+      </td>
+
+      <td>
+        <p>Very basic.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td><a href="http://sprycanvas.com/">SpryCanvas</a></td>
+
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+
+      <td>?</td>
+
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+
+      <td class="no">Required</td>
+      <td>?</td>
+
+      <td>
+        <p></p>
+      </td>
+    </tr>
+
+    <tr>
+      <td><a href="https://tutorsbox.com/">TutorsBox</a></td>
+
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+
+      <td>?</td>
+
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+
+      <td class="no">
+        <p>Required, <a href="https://tutorsbox.com/en/#pricing-wrapper">time limited trial</a>.</p>
+      </td>
+      <td>
+        <p><a href="https://tutorsbox.com/en/#features-wrapper">Works on desktop and mobile browsers</a>.</p>
+      </td>
+
+      <td>
+        <p></p>
+      </td>
+    </tr>
+
+    <tr>
+      <td><a href="http://scribblar.com/">Scribblar</a></td>
+
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+
+      <td>?</td>
+
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+
+      <td class="no">
+        <p>Required, <a href="https://scribblar.com/plans">time limited trial</a>.</p>
+      </td>
+      <td>
+        <p><a href="http://support.scribblar.com/knowledge_base/topics/what-are-scribblar's-system-requirements">Requires Adobe Flash</a>.</p>
+      </td>
+
+      <td>
+        <p></p>
+      </td>
+    </tr>
+
+    <tr>
+      <td><a href="http://vyew.com/">Vyew</a></td>
+
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+
+      <td>?</td>
+
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+
+      <td class="no">
+        <p>Required for creating a meeting.</p>
+      </td>
+      <td>
+        <p><a href="http://vyew.com/site/product/technical-specs/">Requires Adobe Flash</a>.</p>
+      </td>
+
+      <td>
+        <p></p>
+      </td>
+    </tr>
   </tbody>
 </table>
 
@@ -588,6 +969,18 @@ layout: base
 <li>Comparison of regex tools (useful when debugging or explaining regular expressions).</li>
 <li>Online text writing tools (such as <a href="http://etherpad.osuosl.org/">http://etherpad.osuosl.org/</a> and <a href="http://collabedit.com/">http://collabedit.com/</a> ).</li>
 </ul>
+
+<h2 id="FAQ">FAQ</h2>
+
+<dl class="qa">
+
+<dt>Why are "bad" tools included in this page?</dt>
+<dd>Because knowing a tool is "bad" is useful information. It means someone went to the trouble of trying such tool and sharing the experience in this page. It means the next person doesn't need to waste time trying it again.</dd>
+
+<dt>Are the questions in this FAQ made up?</dt>
+<dd>Probably.</dd>
+
+</dl>
 
 <script>
 'use strict';
