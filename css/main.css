@@ -40,7 +40,7 @@ footer {
 table.sheet {
 	border-collapse: collapse;
 	margin: 0;
-	border: 2px solid #aaa;
+	border: 3px solid #aaa;
 	background: #f9f9f9;
 }
 
@@ -101,11 +101,7 @@ table.sheet td.type-yesno {
 	text-align: center;
 }
 
-table.sheet .cg-name-end,
-table.sheet .cg-desktop-end,
-table.sheet .cg-mobile-end,
-table.sheet .cg-features-end,
-table.sheet .cg-setup-end {
-	border-right-width: 2px;
+table.sheet .colgroup-end {
+	border-right-width: 3px;
 }
 

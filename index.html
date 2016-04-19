@@ -27,6 +27,8 @@ layout: base
   </colgroup>
   <colgroup class="cg-features">
     <col class="type-yesno col-remote-control">
+  </colgroup>
+  <colgroup class="cg-chat">
     <col class="type-yesno col-text-chat">
     <col class="type-yesno col-voice-chat">
     <col class="type-yesno col-video-chat">
@@ -310,15 +312,275 @@ layout: base
 
 <h2 id="whiteboard">Whiteboard and drawing</h2>
 
-<p>TODO: Transform this list into a table.</p>
+<table class="sheet">
+  <colgroup class="cg-name">
+    <col class="col-name">
+  </colgroup>
+  <colgroup class="cg-lines">
+    <col class="type-yesno col-freehand">
+    <col class="type-yesno col-lines">
+    <col class="type-yesno col-shapes">
+    <col class="type-yesno col-moving">
+    <col class="type-yesno col-connections">
+    <col class="type-yesno col-brush-size">
+  </colgroup>
+  <colgroup class="cg-features">
+    <col class="type-yesno col-pointing">
+    <col class="type-yesno col-text">
+    <col class="type-yesno col-upload">
+    <col class="type-yesno col-undo">
+  </colgroup>
+  <colgroup class="cg-colors">
+    <col class="type-yesno col-palette">
+    <col class="type-yesno col-custom-color">
+    <col class="type-yesno col-color-picker">
+    <col class="type-yesno col-color-switch">
+  </colgroup>
+  <colgroup class="cg-export">
+    <col class="type-yesno col-export">
+  </colgroup>
+  <colgroup class="cg-chat">
+    <col class="type-yesno col-guest-name">
+    <col class="type-yesno col-text-chat">
+    <col class="type-yesno col-voice-chat">
+    <col class="type-yesno col-video-chat">
+  </colgroup>
+  <colgroup class="cg-extra">
+    <col class="col-comments">
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Name</th>
 
-<ul>
-  <li><a href="http://www.twiddla.com/">http://www.twiddla.com/</a></li>
-  <li><a href="https://sketchboard.me/">https://sketchboard.me/</a></li>
-  <li><a href="https://awwapp.com/">https://awwapp.com/</a></li>
-  <li><a href="http://webwhiteboard.com/">http://webwhiteboard.com/</a></li>
-  <li><a href="http://drawpile.net/">http://drawpile.net/</a></li>
-</ul>
+      <th>Freehand drawing</th>
+      <th>Straight lines</th>
+      <th>Basic shapes</th>
+      <th title="Moving elements of the whiteboard after they were drawn.">Moving</th>
+      <th title="Lines (curved or straight) that are connected to shapes, so when the shape is moved, the lines are also updated.">Connections</th>
+      <th>Brush sizes</th>
+
+      <th title="Features that either highlights changes or shows the current pointed location.">Pointing</th>
+      <th>Text</th>
+      <th>Image/file upload</th>
+      <th title="Can the user undo recent changes?">Undo</th>
+
+      <th title="Does the tool provide a palette to pick colors from?">Color palette</th>
+      <th title="Does the tool provide a way to choose arbitrary colors?">Custom colors</th>
+      <th title="Does the tool provide a way to pick a color from the canvas?">Color picker</th>
+      <th title="Does the tool provide a way to pick from recently choosen colors?">Color quick switch</th>
+
+      <th title="Of course, if the tool does not have built-in support, the user can always take a screenshot.">Save/export</th>
+
+      <th title="Can guests choose a name?">Custom name</th>
+      <th>Text chat</th>
+      <th>Voice chat</th>
+      <th>Video chat</th>
+
+      <th>Account registration</th>
+      <th>Installation and requirements</th>
+
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://www.twiddla.com/">Twiddla</a></td>
+
+      <td class="yes">Yes</td>
+      <td class="yes" title="Inside &quot;Shapes&quot; tool, no angle snapping.">Yes</td>
+      <td class="yes" title="Lines, rectangles and ovals inside &quot;Shapes&quot; tool; extra shapes available at the bottom panel.">Yes</td>
+      <td class="yes" title="Anything can be moved or resized.">Yes</td>
+      <td class="no">No</td>
+      <td class="yes" title="1, 3, 6, 12, 20px">5</td>
+
+      <td class="partial" title="The username is shown whenever a drawing is made or is moved.">Only changes</td>
+      <td class="yes" title="Floating text, text inside sticky note, speech bubble or rounded box, floating Math formulas using LaTeX.">Yes + LaTeX</td>
+      <td class="yes">Images and documents</td>
+      <td class="yes">Per-user</td>
+
+      <td class="no">No</td>
+      <td class="partial" title="It has a single 2D box to pick a color, but not all colors are available (e.g. cannot pick gray).">Partial</td>
+      <td class="no">No</td>
+      <td class="partial" title="It allows picking 2 custom colors and quickly switching between them.">2</td>
+
+      <td class="partial"><a href="https://www.twiddla.com/Pricing.aspx">Subscription</a></td>
+
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="partial" title="Voice chat requires a Pro account.">Paid</td>
+      <td class="no">No</td>
+
+      <td class="yes">
+        <p>Optional.</p>
+        <p><a href="https://www.twiddla.com/Pricing.aspx">Paying users have access to more features.</a></p>
+      </td>
+      <td>
+        <p>Works on desktop and mobile browsers.</p>
+      </td>
+
+      <td>
+        <p>Great general-purpose whiteboard.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td><a href="https://sketchboard.me/">Sketchboard</a></td>
+
+      <td class="yes">Yes</td>
+      <td class="yes" title="Hold shift for straight lines, snaps at 45° angles, arbitrary angles are not possible.">Yes</td>
+      <td class="yes" title="Several shapes available for different purposes.">Yes</td>
+      <td class="yes" title="Anything can be moved, resized and modified.">Yes</td>
+      <td class="yes" title="Curved or straight, with optional arrows, in solid or dashed styles.">Yes</td>
+      <td class="yes" title="1, 2, 3, 6, 12, 24px">6</td>
+
+      <td class="yes" title="The cursor location is shown to other users at all times (with name, color and avatar).">Shows cursor</td>
+      <td class="yes" title="Floating text, text inside any shape, several shapes support Markdown formatting.">Yes + Markdown</td>
+      <td class="partial"><a href="https://sketchboard.io/tos.html">Subscription</a></td>
+      <td class="yes">Per-user</td>
+
+      <td class="yes" title="Some of those colors are duplicates.">228 colors</td>
+      <td class="no">No</td>
+      <td class="no">No</td>
+      <td class="yes" title="Automatically remembers the most recent 12 colors.">12</td>
+
+      <td class="partial" title="&quot;Signed Up Free Plan […] Export diagrams directly to your public GitHub projects.&quot;"><a href="https://sketchboard.io/tos.html">Requires account</a></td>
+
+      <td class="no" title="All guest users have the same &quot;Guest&quot; name.">No</td>
+      <td class="yes">Yes</td>
+      <td class="no">No</td>
+      <td class="no">No</td>
+
+      <td class="yes">
+        <p>Optional.</p>
+      </td>
+      <td>
+        <p>Works on desktop and mobile browsers.</p>
+      </td>
+
+      <td>
+        <p>Great for drawing diagrams.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td><a href="https://awwapp.com/">A web whiteboard</a></td>
+
+      <td class="yes">Yes</td>
+      <td class="no">No</td>
+      <td class="no">No</td>
+      <td class="no">No</td>
+      <td class="no">No</td>
+      <td class="partial" title="Only thick sizes are available: 8, 16, 23, 31, 38px">5</td>
+
+      <td class="no">No</td>
+      <td class="partial" title="Text size is based on the brush size.">Basic</td>
+      <td class="yes">Images</td>
+      <td class="no" title="Undo seems to work fine on Chrome, but undoing on Firefox fails to broadcast the changes.">Per-user, buggy</td>
+
+      <td class="yes">8 colors</td>
+      <td class="no">No</td>
+      <td class="no">No</td>
+      <td class="no">No</td>
+
+      <td class="yes">As PNG</td>
+
+      <td class="yes" title="The name can be changed at the &quot;Show users&quot; dialog.">Yes</td>
+      <td class="partial" title="Hidden by default, no notification is shown for incoming messages.">Hidden</td>
+      <td class="no">No</td>
+      <td class="no">No</td>
+
+      <td class="yes">
+        <p>Optional.</p>
+      </td>
+      <td>
+        <p>Works on desktop and mobile browsers.</p>
+      </td>
+
+      <td>
+        <p>Very basic.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td><a href="http://webwhiteboard.com/">Web Whiteboard</a></td>
+
+      <td class="yes">Yes</td>
+      <td class="no">No</td>
+      <td class="no">No</td>
+      <td class="partial">Text</td>
+      <td class="no">No</td>
+      <td class="partial" title="1, 4px">2</td>
+
+      <td class="no">No</td>
+      <td class="partial" title="Floating text or text inside a sticky note. Changing the style is not possible.">Basic</td>
+      <td class="no">No</td>
+      <td class="yes" title="Undoing drawings seem to leave a trail.">Per-user</td>
+
+      <td class="partial" title="Black, blue, red, green">4 colors</td>
+      <td class="no">No</td>
+      <td class="no">No</td>
+      <td class="yes">4 colors</td>
+
+      <td class="no" title="Seems to be broken as of 2016-04-19.">Broken</td>
+
+      <td class="no">No</td>
+      <td class="no">No</td>
+      <td class="no">No</td>
+      <td class="no">No</td>
+
+      <td class="yes">
+        <p>No accounts.</p>
+      </td>
+      <td>
+        <p>Works on desktop browsers.</p>
+        <p>Can be viewed on mobile browsers.</p>
+      </td>
+
+      <td>
+        <p>Very basic.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td><a href="http://drawpile.net/">Drawpile</a></td>
+
+      <td class="yes">Yes</td>
+      <td class="yes" title="Optionally snaps at 45° angles when holding shift.">Yes</td>
+      <td class="partial" title="Only lines, rectangles and ellipses.">Basic</td>
+      <td class="no">No</td>
+      <td class="no">No</td>
+      <td class="yes" title="Any size from 1 to 128px">128</td>
+
+      <td class="yes" title="Shows the location while clicking, and also shows a trail for a couple of seconds.">Laser pointer tool</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Images</td>
+      <td class="yes">Per-user</td>
+
+      <td class="yes">Several</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="yes" title="Has slots for 5 tools with their own colors and settings.">5 tools</td>
+
+      <td class="yes">Yes</td>
+
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="no">No</td>
+      <td class="no">No</td>
+
+      <td class="yes">
+        <p>No accounts.</p>
+      </td>
+      <td>
+        <p><a href="https://github.com/callaa/Drawpile">C++ client/server application</a> for <a href="http://drawpile.net/download/">Windows, Linux and Mac OS X</a>.</p>
+      </td>
+
+      <td>
+        <p>Powerful painting tool.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 <h2 id="TODO">Other ideas (i.e. TODO list)</h2>
 
@@ -343,10 +605,10 @@ function propagate_classes_from_cols_to_cells(table) {
     for (var j = 0; j < cols.length; j++) {
       cell_classes[index] = ' ' + colgroups[i].className + ' ' + cols[j].className;
       if (j == 0) {
-        cell_classes[index] += ' ' + colgroups[i].className + '-start';
+        cell_classes[index] += ' colgroup-start ' + colgroups[i].className + '-start';
       }
       if (j == cols.length - 1) {
-        cell_classes[index] += ' ' + colgroups[i].className + '-end';
+        cell_classes[index] += ' colgroup-end ' + colgroups[i].className + '-end';
       }
       index++;
     }
