@@ -1,0 +1,308 @@
+---
+# vim:et:sw=2:ts=2:foldmethod=marker:foldmarker=<tr></tr>
+layout: base
+---
+
+<h1>{{ site.name }}</h1>
+
+<p>This page is a community-driven effort to provide a curated list of useful tools that may enhance online mentorship sessions.</p>
+
+<p><a href="https://github.com/denilsonsa/hackhands-aux-tools/">Fork me on GitHub!</a></p>
+
+<h2 id="screen-share">Remote access and screen sharing</h2>
+
+<table class="sheet">
+  <colgroup class="cg-name">
+    <col class="col-name">
+  </colgroup>
+  <colgroup class="cg-desktop">
+    <col class="type-yesno col-win">
+    <col class="type-yesno col-linux">
+    <col class="type-yesno col-mac">
+    <col class="type-yesno col-chrome">
+  </colgroup>
+  <colgroup class="cg-mobile">
+    <col class="type-yesno col-android">
+    <col class="type-yesno col-ios">
+  </colgroup>
+  <colgroup class="cg-features">
+    <col class="type-yesno col-remote-control">
+    <col class="type-yesno col-text-chat">
+    <col class="type-yesno col-voice-chat">
+    <col class="type-yesno col-video-chat">
+  </colgroup>
+  <!--colgroup class="cg-install">
+    <col class="col-">
+    Requires installing a system-wide package (admin privileges)?
+    Requires any kind of account or registration?
+  </colgroup-->
+  <colgroup class="cg-extra">
+    <col class="col-comments">
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Name</th>
+
+      <th>Windows</th>
+      <th>Linux</th>
+      <th>Mac OS X</th>
+      <th>Chrome OS</th>
+      <th>Android</th>
+      <th>iOS</th>
+
+      <th>Remote control</th>
+      <th>Text chat</th>
+      <th>Voice chat</th>
+      <th>Video chat</th>
+
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://appear.in/">appear.in</a></td>
+
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="yes" title="Can anyone confirm?">Yes</td>
+      <td class="yes" title="Are there any limitations?"><a href="https://play.google.com/store/apps/details?id=appear.in.app">Yes</a></td>
+      <td class="yes" title="Are there any limitations?"><a href="https://itunes.apple.com/no/app/appear.in-free-group-video/id878583078?mt=8">Yes</a></td>
+
+      <td class="no">No</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+
+      <!--
+        Uses HTML5 RTC, supports Google Chrome, Mozilla Firefox and Opera.
+        Screen sharing requires Chrome extension. https://chrome.google.com/webstore/detail/appearin-screen-sharing/bodncoafpihbhpfljcaofnebjkaiaiga
+      -->
+      <td>
+        <p></p>
+      </td>
+    </tr>
+
+    <tr>
+      <td><a href="https://www.webex.com/">Cisco WebEx</a></td>
+
+      <td class="partial" title="Requires ActiveX or Java plugin">Difficult</td>
+      <td class="yes" title="Requires plugin">Yes</td>
+      <td class="partial" title="Requires Java plugin">Difficult</td>
+      <td class="no">No</td>
+      <td class="no">No</td>
+      <td class="no">No</td>
+
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+
+      <!--
+        Does it require installing anything?
+      -->
+      <td>
+        <p><a href="https://www.cisco.com/c/en/us/td/docs/collaboration/meeting_center/wbs2911/Meeting-Center-Release-Notes/Meeting-Center-Release-Notes_chapter_010.html">Requires Active X or Java or a plugin</a>, supports a very limited subset of browsers/systems.</p>
+        <p><a href="https://hackhands.com/denilsonsa/">Denilson Sá</a> says: <q>Does not work on Ubuntu 15.04 with icedtea. Don't waste your time with this tool.</q></p>
+      </td>
+    </tr>
+
+    <tr>
+      <td><a href="http://hangouts.google.com/">Google Hangouts</a></td>
+
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="yes"><a href="https://play.google.com/store/apps/details?id=com.google.android.talk">Yes</a></td>
+      <td class="yes"><a href="https://itunes.apple.com/us/app/hangouts/id643496868">Yes</a></td>
+
+      <td class="no">No</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+
+      <!--
+        Does it require installing anything?
+      -->
+      <td>
+        <p></p>
+      </td>
+    </tr>
+
+    <tr>
+      <td><a href="https://chrome.google.com/webstore/detail/chrome-remote-desktop/gbchcmhmhahfdphkhkmpfmihenigjmpp">Chrome Remote Desktop</a></td>
+
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="partial" title="Can only connect to the user's own computers, cannot be used for remote assistance of someone else's computer."><a href="https://play.google.com/store/apps/details?id=com.google.chromeremotedesktop">Limited</a></td>
+      <td class="partial" title="Can only connect to the user's own computers, cannot be used for remote assistance of someone else's computer."><a href="https://itunes.apple.com/us/app/chrome-remote-desktop/id944025852">Limited</a></td>
+
+      <td class="yes">Yes</td>
+      <td class="no">No</td>
+      <td class="no">No</td>
+      <td class="no">No</td>
+
+      <!--
+        Requires manually installing a package to the system.
+        https://support.google.com/chrome/answer/1649523?hl=en
+      -->
+      <td>
+        <p></p>
+      </td>
+    </tr>
+
+    <tr>
+      <td><a href="https://screenhero.com/">Screenhero</a></td>
+
+      <td class="yes">Yes</td>
+      <td class="no">No</td>
+      <td class="yes">Yes</td>
+      <td class="no">No</td>
+      <td class="no">No</td>
+      <td class="no">No</td>
+
+      <td class="yes">Yes</td>
+      <td>?</td>
+      <td class="yes">Yes</td>
+      <td>?</td>
+
+      <!--
+        Requires manually installing a package to the system.
+      -->
+      <td>
+        <p><a href="http://blog.screenhero.com/post/109337923751/screenhero-joins-slack">Currently closed for new accounts</a>, existing users can invite new users.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td><a href="https://www.skype.com/en/">Skype</a></td>
+
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="no">No</td>
+      <td class="yes"><a href="https://play.google.com/store/apps/details?id=com.skype.raider">Yes</a></td>
+      <td class="yes"><a href="https://itunes.apple.com/app/skype/id304878510">Yes</a></td> <!-- https://itunes.apple.com/app/skype-for-ipad/id442012681 -->
+
+      <td class="no">No</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+
+      <!--
+        Requires manually installing a package to the system.
+      -->
+      <td>
+        <p><a href="https://web.skype.com/">Skype for Web</a> requires a <a href="https://support.skype.com/en/faq/FA12316/what-is-the-skype-web-plugin-and-how-do-i-install-it">plugin</a> on <a href="http://blogs.skype.com/2016/04/15/new-seamless-skype-video-calling-on-microsoft-edge-preview/">all browsers except Microsoft Edge</a>.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td><a href="https://www.teamviewer.com/en/">TeamViewer</a></td>
+
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="partial" title="Chrome OS version can connect to other screens, but can't share the screen.">One-way</td>
+      <td class="yes" title="Are there any limitations?"><a href="https://play.google.com/store/apps/details?id=com.teamviewer.teamviewer.market.mobile">Yes</a></td>
+      <td class="yes" title="Are there any limitations?"><a href="https://itunes.apple.com/us/app/teamviewer/id692035811">Yes</a></td>
+
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="no">No</td>
+      <td class="no">No</td>
+
+      <!--
+        Requires manually installing a package to the system.
+        Can be executed without installing (i.e. portable version).
+      -->
+      <td>
+        <p>The <a href="https://chrome.google.com/webstore/detail/teamviewer/oooiobdokpcfdlahlmcddobejikcmkfo">Chrome app</a> is unidirectional: it can connect to shared screens, but it cannot share the screen.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td><a href="http://zoom.us/">Zoom</a></td>
+
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="no">No</td>
+      <td class="yes" title="Are there any limitations?"><a href="https://play.google.com/store/apps/details?id=us.zoom.videomeetings">Yes</a></td>
+      <td class="yes" title="Are there any limitations?"><a href="https://itunes.apple.com/us/app/id546505307">Yes</a></td>
+
+      <td class="no">No</td>
+      <td class="no">No</td>
+      <td class="yes">Yes</td>
+      <td class="no">No</td>
+
+      <!-- Requires manually installing a package to the system. -->
+      <td>
+        <p>Integrated with <a href="https://hackhands.com/">HackHands</a>.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="Whiteboard">Whiteboard and drawing</h2>
+
+<p>TODO: Transform this list into a table.</p>
+
+<ul>
+  <li><a href="http://www.twiddla.com/">http://www.twiddla.com/</a></li>
+  <li><a href="https://sketchboard.me/">https://sketchboard.me/</a></li>
+  <li><a href="https://awwapp.com/">https://awwapp.com/</a></li>
+  <li><a href="http://webwhiteboard.com/">http://webwhiteboard.com/</a></li>
+</ul>
+
+<!--
+Other ideas:
+
+* Comparison of regex tools (useful when debugging or explaining regular expressions).
+
+-->
+
+<script>
+'use strict';
+
+function propagate_classes_from_cols_to_cells(table) {
+  // Note: This code does not support colspan/rowspan.
+  // Note: This code does not support nested tables.
+
+  // Finding all classes from <colgroup> and <col> elements.
+  var cell_classes = [];
+  var index = 0;
+  var colgroups = table.getElementsByTagName('colgroup');
+  for (var i = 0; i < colgroups.length; i++) {
+    var cols = colgroups[i].getElementsByTagName('col');
+    for (var j = 0; j < cols.length; j++) {
+      cell_classes[index] = ' ' + colgroups[i].className + ' ' + cols[j].className;
+      if (j == 0) {
+        cell_classes[index] += ' ' + colgroups[i].className + '-start';
+      }
+      if (j == cols.length - 1) {
+        cell_classes[index] += ' ' + colgroups[i].className + '-end';
+      }
+      index++;
+    }
+  }
+
+  // Applying the classes to the table cells.
+  Array.prototype.map.call(table.getElementsByTagName('tr'), function(tr) {
+    var cells = tr.querySelectorAll('th, td');
+    for (var i = 0; i < cells.length && i < cell_classes.length; i++) {
+      cells[i].className += cell_classes[i];
+    }
+  });
+}
+
+function init() {
+  Array.prototype.map.call(document.querySelectorAll('table.sheet'), propagate_classes_from_cols_to_cells);
+}
+
+init();
+
+</script>

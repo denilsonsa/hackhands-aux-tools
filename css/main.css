@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+html, body {
+	background: white;
+	color: black;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	font-size: 13px;
+}
+
+body {
+	padding: 1em;
+}
+
+h1 {
+	margin: 0 0 0.5em 0;
+}
+h2 {
+	margin: 1em 0 0.5em 0;
+}
+q {
+	quotes: "“" "”" "‘" "’";
+	font-style: italic;
+}
+q:before {
+	content: open-quote;
+}
+q:after {
+	content: close-quote;
+}
+
+footer {
+	margin-top: 1em;
+	padding-top: 1em;
+	font-size: 0.875em;
+	border-top: 1px solid gray;
+}
+
+table.sheet {
+	border-collapse: collapse;
+	margin: 0;
+	border: 2px solid #aaa;
+	background: #f9f9f9;
+}
+
+table.sheet p {
+	margin: 0;
+	padding: 0;
+}
+table.sheet p + p {
+	margin-top: 0.25em;
+}
+table.sheet a {
+	font: inherit;
+	text-decoration: inherit;
+}
+table.sheet a[href]:hover {
+	text-decoration: underline;
+}
+
+table.sheet td[title]:after {
+	content: "ℹ️";
+	font-size: 0.75em;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 1em;
+	text-align: center;
+}
+
+table.sheet td.yes     { background: #9f9; }
+table.sheet td.no      { background: #f99; }
+table.sheet td.partial { background: #ffb; }
+
+table.sheet th,
+table.sheet td {
+	border: 1px solid #aaa;
+	padding: 0.2em 0.4em;
+	text-align: left;
+	position: relative;
+}
+
+table.sheet th {
+	background: #f2f2f2;
+	font-weight: bold;
+	text-align: center;
+}
+table.sheet td.col-name {
+	background: #ececec;
+	font-weight: bold;
+	text-align: right;
+}
+table.sheet tr:hover td.col-name {
+	background: #f9f9f9;
+}
+table.sheet td.type-yesno {
+	text-align: center;
+}
+
+table.sheet .cg-name-end,
+table.sheet .cg-desktop-end,
+table.sheet .cg-mobile-end,
+table.sheet .cg-features-end {
+	border-right-width: 2px;
+}
+

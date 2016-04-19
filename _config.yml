@@ -1,0 +1,39 @@
+# vi:et:sw=2:ts=2
+# Remember: do not use tabs in configuration files.
+# See also: http://jekyllrb.com/docs/configuration/
+
+encoding: utf-8
+
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  # If true, inserts <br> for newlines in paragraphs.
+  hard_wrap: false
+
+  # "as_input", "numeric", "symbolic", "as_char"
+  entity_output: "as_input"
+
+  # "coderay" is the default, but it outputs different classes than rouge/pygments.
+  # "rouge" seems a better choice.
+  syntax_highlighter: "rouge"
+
+  # syntax_highlighter_opts:
+    # https://github.com/jneen/rouge#full-options
+    # This is already the default:
+    # line_numbers: false
+
+  # Either "class" or "style".
+  coderay_css: "class"
+  # "table", "inline" or nil
+  coderay_line_numbers: "table"
+
+  # Requires "stringex" gem.
+  # transliterated_header_ids: true
+
+# Site name (not used by Jekyll itself, only used in the template):
+name: "HackHands auxiliary tools"
+# In fact, any property from this _config.yml file can be referenced in a
+# template using {{ site.foobar }}
+
+asset_path_prefix: ""
