@@ -49,7 +49,7 @@ layout: base
       <th>Android</th>
       <th>iOS</th>
 
-      <th>Remote control</th>
+      <th title="Ability to control the mouse and keyboard of a remote computer.">Remote control</th>
       <th>Text chat</th>
       <th>Voice chat</th>
       <th>Video chat</th>
@@ -117,6 +117,32 @@ layout: base
     </tr>
 
     <tr>
+      <td><a href="https://hello.firefox.com/">Firefox Hello</a></td>
+
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="partial">Only if invited</td>
+      <td class="no">No</td>
+      <td class="no">No</td>
+
+      <td class="no">No</td>
+      <td class="yes"><a href="https://support.mozilla.org/en-US/kb/send-instant-messages-firefox-hello">Yes</a></td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+
+      <td class="yes">Optional</td>
+      <td>
+        <p>A session must be initiated from a Firefox desktop browser.</p>
+        <p>Uses HTML5 WebRTC, <a href="https://support.mozilla.org/en-US/kb/which-browsers-will-work-firefox-hello-video-chat">any browser</a> can <a href="https://support.mozilla.org/en-US/kb/join-conversation-firefox-hello">join a session</a>.</p>
+      </td>
+
+      <td>
+        <p>It only supports <a href="https://support.mozilla.org/en-US/kb/browse-web-pages-together-firefox-hello">sharing Firefox tabs</a>, it does not support sharing the entire screen.</p>
+      </td>
+    </tr>
+
+    <tr>
       <td><a href="http://hangouts.google.com/">Google Hangouts</a></td>
 
       <td class="yes">Yes</td>
@@ -135,7 +161,7 @@ layout: base
       <td>
         <p>Uses HTML5.</p>
         <p><a href="https://support.google.com/hangouts/answer/1216376?hl=en">Some browsers/systems may need the Hangouts plugin.</a></p>
-        <p>Does screen sharing require a plugin or an extension?</p>
+        <p>Does screen sharing require a plugin/extension?</p>
       </td>
 
       <td>
@@ -160,11 +186,11 @@ layout: base
 
       <td class="no"><p>Requires a Google account</p></td>
       <td>
-        <p><a href="https://support.google.com/chrome/answer/1649523?hl=en">Requires installing software to the system.</a></p>
+        <p><a href="https://support.google.com/chrome/answer/1649523?hl=en">Requires installation.</a></p>
       </td>
 
       <td>
-        <p></p>
+        <p>Every few minutes, prompts the user requesting assistance to confirm they still want the screen to be shared.</p>
       </td>
     </tr>
 
@@ -187,7 +213,7 @@ layout: base
         <p><a href="http://blog.screenhero.com/post/109337923751/screenhero-joins-slack">Currently closed for new accounts</a>, existing users can invite new users.</p>
       </td>
       <td>
-        <p><a href="https://screenhero.com/download.html">Requires installing software to the system.</a></p>
+        <p><a href="https://screenhero.com/download.html">Requires installation.</a></p>
       </td>
 
       <td>
@@ -215,7 +241,7 @@ layout: base
         <p>Allows sign-in through Facebook.</p>
       </td>
       <td>
-        <p><a href="https://www.skype.com/en/download-skype/skype-for-computer/">Requires installing software to the system.</a></p>
+        <p><a href="https://www.skype.com/en/download-skype/skype-for-computer/">Requires installation.</a></p>
         <p><a href="https://web.skype.com/">Skype for Web</a> requires a <a href="https://support.skype.com/en/faq/FA12316/what-is-the-skype-web-plugin-and-how-do-i-install-it">plugin</a> on <a href="http://blogs.skype.com/2016/04/15/new-seamless-skype-video-calling-on-microsoft-edge-preview/">all browsers except Microsoft Edge</a>.</p>
       </td>
 
@@ -241,7 +267,7 @@ layout: base
 
       <td class="yes">Optional</td>
       <td>
-        <p><a href="https://www.teamviewer.com/en/download/">Requires downloading software, but installation is optional (a <em>portable</em> version is also available).</a></p>
+        <p><a href="https://www.teamviewer.com/en/download/">Requires download, installation is optional (a <em>portable</em> version is also available).</a></p>
         <p>The <a href="https://chrome.google.com/webstore/detail/teamviewer/oooiobdokpcfdlahlmcddobejikcmkfo">Chrome app</a> is unidirectional: it can connect to shared screens, but it cannot share the screen.</p>
       </td>
 
@@ -263,7 +289,7 @@ layout: base
       <td class="no">No</td>
       <td class="no">No</td>
       <td class="yes">Yes</td>
-      <td class="no">No</td>
+      <td class="yes">Yes</td>
 
       <td class="partial">
         <p>Required for hosting a meeting.</p>
@@ -271,7 +297,7 @@ layout: base
         <p>Meetings started from within a <a href="https://hackhands.com/">HackHands</a> session don't need an account.</p>
       </td>
       <td>
-        <p><a href="https://zoom.us/download">Requires installing software to the system.</a></p>
+        <p><a href="https://zoom.us/download">Requires installation.</a></p>
         <p></p>
       </td>
 
@@ -282,7 +308,7 @@ layout: base
   </tbody>
 </table>
 
-<h2 id="Whiteboard">Whiteboard and drawing</h2>
+<h2 id="whiteboard">Whiteboard and drawing</h2>
 
 <p>TODO: Transform this list into a table.</p>
 
@@ -291,15 +317,15 @@ layout: base
   <li><a href="https://sketchboard.me/">https://sketchboard.me/</a></li>
   <li><a href="https://awwapp.com/">https://awwapp.com/</a></li>
   <li><a href="http://webwhiteboard.com/">http://webwhiteboard.com/</a></li>
+  <li><a href="http://drawpile.net/">http://drawpile.net/</a></li>
 </ul>
 
-<!--
-Other ideas:
+<h2 id="TODO">Other ideas (i.e. TODO list)</h2>
 
-* Comparison of regex tools (useful when debugging or explaining regular expressions).
-* Online text writing tools (such as http://etherpad.osuosl.org/ ).
-
--->
+<ul>
+<li>Comparison of regex tools (useful when debugging or explaining regular expressions).</li>
+<li>Online text writing tools (such as <a href="http://etherpad.osuosl.org/">http://etherpad.osuosl.org/</a> and <a href="http://collabedit.com/">http://collabedit.com/</a> ).</li>
+</ul>
 
 <script>
 'use strict';

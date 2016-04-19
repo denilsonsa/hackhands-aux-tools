@@ -61,6 +61,7 @@ table.sheet a[href]:hover {
 	text-decoration: underline;
 }
 
+table.sheet th[title]:after,
 table.sheet td[title]:after {
 	content: "ℹ️";
 	font-size: 0.75em;
